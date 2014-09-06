@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Ionic Seed App</title>
+
+    <!-- ionic css -->
+    <link href="http://code.ionicframework.com/1.0.0-beta.11/css/ionic.min.css" rel="stylesheet">
+
+    <link href="../ionic.contrib.frost.css" rel="stylesheet">
+
+    <!-- angularjs scripts -->
+    <script src="http://code.ionicframework.com/1.0.0-beta.11/js/ionic.bundle.min.js"></script>
+
+    <script src="../ionic.contrib.frost.js"></script>
+
+    <style>
+      .dark-overlay {
+        background-color: #222;
+        opacity: 0.8;
+      }
+      .dark-item {
+        background-color: transparent;
+        color: #fff;
+        border-color: #444;
+      }
+      .close-icon:before {
+        font-size: 40px !important;
+      }
+      .bar-clear {
+        background: none;
+      }
+      .overlay-spacer {
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <!-- 
+    'starter' is the name of this angular module (js/app.js)
+  -->
+  <body ng-app="starter">
+
+    <ion-pane frost ng-controller="UnderCtrl">
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">Under content</h1>
+      </ion-header-bar>
+      <ion-content class="has-header">
+        <button class="button button-block button-balanced">A Bright Button</button>
+        <ion-list>
+          <ion-item ng-repeat="item in items">
+            {{item.text}}
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+    <ion-pane ng-controller="OverlayCtrl" class="dark-overlay">
+      <ion-header-bar class="bar-clear">
+        <button class="button button-icon ion-ios7-close-empty close-icon pull-right"></button>
+      </ion-header-bar>
+      <ion-content class="has-header">
+        <div class="overlay-spacer"></div>
+        <ion-list>
+          <ion-item ng-repeat="item in items" class="dark-item">
+            {{item.text}}
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+    <script>
+      angular.module('starter', ['ionic', 'ionic.contrib.frost'])
+      .controller('UnderCtrl', function($scope) {
+        $scope.items = [];
+        for(var i = 0; i < 30; i++) {
+          $scope.items.push({text: 'Item ' + (i+1) });
+        }
+      })
+      .controller('OverlayCtrl', function($scope) {
+        $scope.items = [];
+        for(var i = 0; i < 5; i++) {
+          $scope.items.push({text: 'Option' + (i+1) });
+        }
+      });
+    </script>
+  </body>
+</html>
