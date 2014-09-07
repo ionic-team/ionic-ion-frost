@@ -11,7 +11,7 @@ A reusable frosted-glass effect for adding this cool iOS effect to your Ionic ap
 
 ### Use
 
-To use, add the attribute `frost` to the element you want to blur. Then, you'll want to add an overlay to give a nice faded effect for content on top:
+To use, add the attribute `frost` to the element you want to blur. Then, you'll want to add an overlay to give a nice faded effect for content on top. The demo has a dark overlay you can use:
 
 ```html
 <ion-pane frost>
@@ -28,4 +28,16 @@ To use, add the attribute `frost` to the element you want to blur. Then, you'll 
 ```
 
 See `demo/index.html` for an example.
+
+### Updating the Frost
+
+When the content changes underneath, you need to update the frosted effect. To do that in a controller (for example), inject the `$ionicFrostedDelegate` and call `update()` on it:
+
+```javascript
+controller('MyCtrl', function($scope, $ionicFrostedDelegate) {
+  $scope.contentChanged = function() {
+    $ionicFrostedDelegate.update();
+  };
+});
+```
 
