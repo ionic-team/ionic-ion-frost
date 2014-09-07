@@ -23,3 +23,6 @@ To use, add the attribute `frost` to the element you want to blur. Then, you'll 
 </style>
 
 See `demo/index.html` for an example.
+
+<p data-height="266" data-theme-id="3572" data-slug-hash="pmBch" data-default-tab="result" data-user="ionic" class='codepen'>See the Pen <a href='http://codepen.io/ionic/pen/pmBch/'>Ionic Contrib: Frost</a> by Ionic (<a href='http://codepen.io/ionic'>@ionic</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
