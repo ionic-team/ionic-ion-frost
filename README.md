@@ -1,7 +1,7 @@
 Ionic Contrib: Frosted Glass
 ===================
 
-A reusable frosted-glass effect for adding this cool iOS effect to your Ionic apps. It looks like this:
+A reusable frosted-glass effect for adding this cool iOS effect to your Ionic apps. (this is an updated and more generic version of our old [Ionic Frosted Glass Header](https://github.com/driftyco/ionic-contrib-frosted-glass) contrib). It looks like this:
 
 
 <p data-height="266" data-theme-id="3572" data-slug-hash="pmBch" data-default-tab="result" data-user="ionic" class='codepen'>See the Pen <a href='http://codepen.io/ionic/pen/pmBch/'>Ionic Contrib: Frost</a> by Ionic (<a href='http://codepen.io/ionic'>@ionic</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
