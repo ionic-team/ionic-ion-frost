@@ -21,6 +21,7 @@ To use, add the attribute `frost` to the element you want to blur. Then, you'll 
   opacity: 0.8;
 }
 </style>
+```
 
 See `demo/index.html` for an example.
 
