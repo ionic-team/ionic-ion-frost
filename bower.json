@@ -1,0 +1,24 @@
+{
+  "name": "ionic-ion-frost",
+  "version": "0.0.1",
+  "homepage": "https://github.com/driftyco/ionic-ion-frost",
+  "authors": [
+    "Max Lynch <max@drifty.com>"
+  ],
+  "description": "Reusable iOS frosted glass effect",
+  "main": "ionic.contrib.frost.js",
+  "keywords": [
+    "ionic",
+    "html5",
+    "android",
+    "drawer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
